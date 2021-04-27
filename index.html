@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="my-4">
+        <div class="bg-white w-75 m-auto p-5 shadow">
+            <h1 class="font-weight-light">CRUD System</h1>
+            <div class="form-group">
+                <label for="Productname">Product Name:</label>
+                <input id="Productname" class="form-control" type="text">
+                <div id="nameAlert" class="d-none alert alert-danger mt-3">name should be start with capital letter followed by 3,7 small letters</div>
+            </div>
+            <div class="form-group">
+                <label for="Productcategory">Product Category:</label>
+                <input id="Productcategory" class="form-control" type="text">
+                <div id="CategoryAlert" class="d-none alert alert-danger mt-3">Category should be start with capital or small letter followed by 3,7 small letters</div>
+            </div>
+            <div class="form-group">
+                <label for="Productprice">Product Price:</label>
+                <input id="Productprice" class="form-control" type="text">
+                <div id="PriceAlert" class="d-none alert alert-danger mt-3">Price should be 3 numbers at least</div>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Product Description:</label>
+                <textarea name="" id="productDescription" class="form-control" cols="30" rows="2"></textarea>
+            </div>
+            <button id="addbtn" class="btn btn-info">add product</button>
+        </div>
+    </div>
+    <div class="my-4">
+        <input type="text" placeholder="search By Name..."  class="form-control  w-75 m-auto" id="searchInput">
+    </div>
+    <table class="table w-75 m-auto">
+        <thead>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Product Category</th>
+            <th>Product Price</th>
+            <th>Product Description</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+    </table>
+    
+
+
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
